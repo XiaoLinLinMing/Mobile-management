@@ -1,0 +1,114 @@
+/**
+ * 顶部总销量
+ */
+.today-sale-main{
+	position: relative;
+	width: 80%;
+	height: 120px;
+	background-color: aquamarine;
+	border-radius: 0.5rem;
+	overflow: hidden;	
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.today-sale-circle{
+	background-color: rgba(255,255,255,.3);
+	border-radius: 50%;
+	margin-top: 6rem;
+	float: left;
+	margin-left: -0.2rem;
+}
+
+.info {
+    height: 100%;
+    width: 150%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    top: 80%;
+    border-radius: 55%;
+    border: 0px solid red;
+    left: 50%;
+    transform: translate(-50%, 0);
+	animation: circle-animation 2s infinite;
+	animation-direction:reverse;
+}
+
+@keyframes circle-animation
+{
+	0%   {height: 100%;}
+	25%  {height: 125%;}
+	50%  {height: 150%;}
+	100% {height: 100%;}
+}
+
+.info2 {
+    left: 0px;
+}
+
+.info3 {
+    left: 100%;
+}
+
+.today-font{
+	font-size: 0.8rem;
+	color: white;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+/*单日数据*/
+.today-data-panel-main{
+	width: 90%;
+	margin-left: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: rgb(230,230,230) 1px 4px 5px; 
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.other-data{
+
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #FFFFFF;
+}
+
+.data-block{
+	flex: 1;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 15px;
+	height: 30px;
+	border-right: 1px solid rgb(230,230,230);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.number{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.data-name{
+	font-size: 10px;
+	color: rgb(168,168,168);
+}
+
+/*模块标题*/
+.title-row{
+	height: 20px;
+	line-height: 20px;
+	font-size: 16ox;
+	padding-left: 5px;
+	padding-right: 20px;
+	border-left: 3px solid rgb(136,225,229);
+	margin-top: 20px;
+	margin-left: 20px;
+}
